@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Welcome Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="party-bg"></div>
+    <div class="flower-container" id="flower-container"></div>
+    <div class="container" id="box">
+        <div id="content-container">
+            <h1 id="heading">Enter Your Name</h1>
+            <div id="input-group">
+                <div class="input-wrapper">
+                    <input type="text" id="name-input" placeholder="What's your name?" autocomplete="off"
+                        onkeydown="if(event.key === 'Enter') submitName()">
+                </div>
+                <button id="submit-btn" onclick="submitName()">Submit</button>
+            </div>
+        </div>
+        <h2 id="welcome-msg"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
